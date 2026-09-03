@@ -30,7 +30,7 @@ tags = {
 #### Create Second SubNet ###
 resource "aws_subnet" "new-subnet-1" {
   vpc_id = aws_vpc.my_vpc.id
-  cidr_block = "10.0.1.0/20"
+  cidr_block = "10.0.16.0/20"
 
   tags = {
     Name = "My-subnet-2"
