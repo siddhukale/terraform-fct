@@ -1,7 +1,4 @@
 ###### Create a  Subnet in that VPC which is Already Created##
-provider "aws" {
-  
-}
 
 
 resource "aws_subnet" "new-subnet" {
