@@ -1,8 +1,24 @@
-resource "aws_vpc" "my-vpc" {
-    cidr_block = "10.0.0.0/16"
-
-    tags = {
-    Name = "my-1vpc"    
-    }
+provider "aws" {
   
+}
+
+#### Create Vpc ###### 
+
+# resource "aws_vpc" "my-vpc" {
+#     cidr_block = "10.0.0.0/16"
+
+#     tags = {
+#     Name = "my-1vpc"    
+#     }
+  
+# }
+
+###### Create a  Subnet in that VPC which is Already Created##
+resource "aws_subnet" "new-subnet" {
+vpc_id =   "vpc-0c66533582604ff8c"
+cidr_block = "10.0.0.0/20"
+
+tags = {
+  Name = "My-Subnet"
+}
 }
