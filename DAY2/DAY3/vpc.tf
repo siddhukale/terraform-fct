@@ -46,3 +46,26 @@ resource "aws_internet_gateway" "my_igw" {
     }
   
 }
+
+#### Create Route Table ####
+resource "aws_route_table" "my_new_rt" {
+  vpc_id = aws_vpc.my_vpc.id
+  tags = {
+    Name = "My-new-public-rt"
+  }
+}
+
+##### Create Default Route Table ####
+resource "aws_route" "default_route" {
+  route_table_id = aws_route_table.my_new_rt.id
+destination_cidr_block = "0.0.0.0/0"
+gateway_id = aws_internet_gateway.my_igw.id
+
+}
+
+### Associated with 1 subnet ###
+resource "aws_route_table_association" "public_subnet" {
+subnet_id = aws_subnet.new-subnet.id  
+route_table_id = aws_route_table.my_new_rt.id
+}
+
