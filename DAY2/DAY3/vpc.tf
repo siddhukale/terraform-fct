@@ -18,7 +18,7 @@ resource "aws_vpc" "my_vpc" {
 
 
 resource "aws_subnet" "new-subnet" {
-vpc_id =   "aws_vpc.my_vpc.id"
+vpc_id =   aws_vpc.my_vpc.id
 cidr_block = "10.0.0.0/20"
 
 tags = {
