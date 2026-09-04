@@ -21,7 +21,7 @@ resource "aws_vpc" "my_vpc" {
 resource "aws_subnet" "new-subnet" {
 vpc_id =   aws_vpc.my_vpc.id
 cidr_block = "10.0.0.0/20"
-
+availability_zone = "ap-south-1c"
 tags = {
   Name = "My-Subnet"
 }
@@ -68,4 +68,5 @@ resource "aws_route_table_association" "public_subnet" {
 subnet_id = aws_subnet.new-subnet.id  
 route_table_id = aws_route_table.my_new_rt.id
 }
+
 
