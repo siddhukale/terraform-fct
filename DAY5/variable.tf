@@ -4,7 +4,7 @@ variable "region_name" {
 default = "ap-south-1"
 }
 variable "availability_zone" {
-    default = "ap-south-1b"
+    default = "ap-south-1c"
   
 }
 variable "ami_image" {
