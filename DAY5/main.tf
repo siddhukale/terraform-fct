@@ -8,6 +8,7 @@ resource "aws_instance" "my_instance" {
   ami = "ami-090d68841c2a28756"
   instance_type = "t3.micro"
   key_name = "siddhesh-key"
+  subnet_id = "subnet-00ecb13ce28393ab9"
 vpc_security_group_ids = [ "sg-04ac1d41063a71696" ]
 
   tags ={
