@@ -5,7 +5,7 @@ provider "aws"  {
   
 }
 
-resource "aws_instance" "my_instance" {
+resource "aws_instance" "new_instance" {
  # ami = "ami-090d68841c2a28756"
   ami = var.ami_image
   
@@ -22,6 +22,6 @@ resource "aws_instance" "my_instance" {
   vpc_security_group_ids = [var.my_sg]
 
   tags = {
-    Name = "web-server"
+    Name = "new-server"
   } 
 }
