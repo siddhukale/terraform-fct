@@ -6,7 +6,7 @@ provider "aws"  {
 
 resource "aws_instance" "my_instance" {
   ami = "ami-090d68841c2a28756"
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
   key_name = "siddhesh-key"
 vpc_security_group_ids = [ "sg-04ac1d41063a71696" ]
 
