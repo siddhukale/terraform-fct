@@ -9,6 +9,8 @@ resource "aws_instance" "new_instance" {
  # ami = "ami-090d68841c2a28756"
   ami = var.ami_image
   
+  availability_zone = var.availability_zone
+  
   # instance_type = "t3.micro"
   instance_type = var.instance_config
 

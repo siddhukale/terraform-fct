@@ -1,7 +1,11 @@
 #### creat variable file 
 
 variable "region_name" {
-default = "ap-south-1b"
+default = "ap-south-1"
+}
+variable "availability_zone" {
+    default = "ap-south-1b"
+  
 }
 variable "ami_image" {
 default = "ami-090d68841c2a28756"
