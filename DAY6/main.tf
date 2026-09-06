@@ -8,7 +8,7 @@ resource "aws_instance" "new-instance" {
 instance_type = var.instance_type
 ami = var.image_name
 key_name = var.key_name
-vpc_security_group_ids = var.sg
+vpc_security_group_ids = [var.sg]
 
 user_data = <<-EOF
             #!/bin/bash
