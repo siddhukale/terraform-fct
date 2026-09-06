@@ -69,7 +69,7 @@ subnet_id = aws_subnet.new-subnet.id
 route_table_id = aws_route_table.my_new_rt.id
 }
 
-#### Create a SG ########33
+#### Create a SG ########
 
 resource "aws_security_group" "my_sg" {
   name        = "my-terraform-sg"

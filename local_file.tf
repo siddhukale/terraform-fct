@@ -9,11 +9,3 @@
  # region = "ap-south-1"
 #}
 
-resource "aws_instance" "fct-instance" {
-  ami           = "ami-090d68841c2a28756"
-  instance_type = "t3.micro"
-
-  tags = {
-    Name = "first-instance"
-  }
-}

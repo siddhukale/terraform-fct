@@ -27,3 +27,5 @@ resource "aws_instance" "new_instance" {
     Name = "new-server"
   } 
 }
+
+

@@ -1,4 +1,4 @@
-#### creat variable file 
+#### creat variable file and i defined the variable
 
 variable "region_name" {
 default = "ap-south-1"
