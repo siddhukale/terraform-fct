@@ -10,6 +10,7 @@ ami = var.image_name
 key_name = var.key_name
 vpc_security_group_ids = [var.sg]
 subnet_id = var.subnet_id
+ associate_public_ip_address = true
 
 user_data = <<-EOF
             #!/bin/bash
