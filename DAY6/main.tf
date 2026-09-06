@@ -9,6 +9,7 @@ instance_type = var.instance_type
 ami = var.image_name
 key_name = var.key_name
 vpc_security_group_ids = [var.sg]
+subnet_id = var.subnet_id
 
 user_data = <<-EOF
             #!/bin/bash

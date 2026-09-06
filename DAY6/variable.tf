@@ -18,3 +18,7 @@ variable "sg" {
     default = "sg-04ac1d41063a71696"
   
 }
+variable "subnet_id" {
+    default = "	subnet-00ecb13ce28393ab9"
+  
+}
